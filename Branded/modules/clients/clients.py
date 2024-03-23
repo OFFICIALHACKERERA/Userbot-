@@ -134,7 +134,12 @@ async def run_async_clients():
     await bot.start()
     LOGGER.info("Helper Robot Started.")
     try:
+        
         await bot.send_message(LOG_GROUP_ID, "**Helper Robot Started.**")
+        await bot.send_file(LOG_GROUP_ID,
+                                  START_PIC,
+                                  caption=Lola,
+                                  buttons=[[Button.url("🥀 Uᴘᴅᴀᴛᴇs", "https://t.me/Broken_Heart_72"),Button.url("🥀 Sᴜᴘᴘᴏʀᴛ", "https://t.me/Bhutiya_Haveli"),]])        
     except:
         pass
     LOGGER.info("Starting PyTgCalls Client...")
