@@ -130,16 +130,13 @@ async def run_async_clients():
             await app.join_chat("BRANDRD_BOT")
         except:
             pass
-    LOGGER.info("Starting Helper Robot ...")
+    LOGGER.info("Starting ...")
     await bot.start()
-    LOGGER.info("Helper Robot Started.")
+    LOGGER.info("Helper ")
     try:
         
-        await bot.send_message(LOG_GROUP_ID, "**Helper Robot Started.**")
-        await bot.send_file(LOG_GROUP_ID,
-                                  START_PIC,
-                                  caption=Lola,
-                                  buttons=[[Button.url("🥀 Uᴘᴅᴀᴛᴇs", "https://t.me/Broken_Heart_72"),Button.url("🥀 Sᴜᴘᴘᴏʀᴛ", "https://t.me/Bhutiya_Haveli"),]])        
+        await bot.send_message(LOG_GROUP_ID, "**Helper Robot d.**")
+                
     except:
         pass
     LOGGER.info("Starting PyTgCalls Client...")
